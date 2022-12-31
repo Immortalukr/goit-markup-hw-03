@@ -278,7 +278,7 @@ color:var(--color-for-hedear);
 }
 /* footer */
 .footer{
-   background-color: var(--color-for-tex-contact);
+   background-color: var(--color-for-bc);
    padding-top: 100px;
 }
 .container-footer{
