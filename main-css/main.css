@@ -166,7 +166,6 @@ color: var(--color-for-btn-text-hover);
     display: inline;
     padding:16px 32px;
     margin-top: 48px;
-    align-items: center;
 
     font-weight: 500;
     font-size: 16px;
@@ -177,16 +176,19 @@ color: var(--color-for-btn-text-hover);
     color: var(--color-for-body);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    
+}
+.btn-hero:hover{
+    background-color: var(--color-for-btn-hov-foc-hero);
 }
 /* section about company */
 .about-conpany{
     display: flex;
     margin-top: 120px;
-    
+    margin-left: calc(-1 * var(--card-between-gab));
 }
 .about{
-    max-width: 264px;
+    flex-basis: calc(100% / 4 - var(--card-between-gab));
+    margin-left:var(--card-between-gab);
 }
 .about >.head{
     margin-bottom: 8px;
@@ -286,8 +288,6 @@ color:var(--color-for-hedear);
     
 }
 .logo-footer{
-    display: flex;
-    
     color: var(--color-for-footer-head);
     font-family: var(--logo-font);
     font-weight: 800;
@@ -301,8 +301,6 @@ color:var(--color-for-hedear);
     color: var(--color-for-btn-text-hover);
 }
 .text-footer{
-display: flex;
-flex-wrap: wrap;
 padding-bottom: 100px ;
 max-width: 264px;
 margin-top: 16px;
@@ -342,10 +340,17 @@ color:var(--color-for-footer-text);
     line-height: 1.5;
     letter-spacing: 0.04em;
     color:var(--color-for-btn-text-hero) ;
+    background-color: var(--color-for-footer-head);
     text-transform: capitalize;
 
     padding: 12px 24px;
 }
+.btn-menu:hover{
+    color: var(--color-for-btn-secondary);
+    background-color: var(--color-for-btn-text-hover);
+
+}
+
 /* main info page */
 .header-portfolio{
     margin-top: 72px;
