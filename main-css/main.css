@@ -350,11 +350,10 @@ color:var(--color-for-footer-text);
     flex-basis: calc( 100% / 3 - var(--card-between-gab));
     margin-left: var(--card-between-gab);
     margin-bottom: var(--card-between-gab-bottom);
-    background: var(--color-for-body);
-    border: 1px solid var(--color-for-footer-text);
     text-transform: capitalize;
 }
 .card-text{
+    border-top: none;
     padding-top:32px ;
     padding-bottom: 32px;
     padding-left:16px ;
