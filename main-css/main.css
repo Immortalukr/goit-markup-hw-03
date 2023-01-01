@@ -15,10 +15,11 @@
     --color-for-footer-text:#E7E9FC;
     
     /* fonts */
-    --logo-font:ralaway,sans-serif;
+    --logo-font:Raleway,sans-serif;
     --text-font:Roboto ,sans-serif;
     /* size between card*/
     --card-between-gab:24px;
+    --card-between-gab-bottom:48px;
 }
 /* global border box */
 
@@ -33,11 +34,8 @@ body{
     background-color:var(--color-for-body);
     color:var(--color-for-tex-contact) ;
     font-family:var(--text-font) ;
-    font-weight: 400;
     font-size:16px;
-    line-height:1.5;
-    letter-spacing: 0.02em;
-    
+    line-height:1.5;   
 }
 /* reset standart style */
 h1,h2,h3,h4,h5,h6,p{
@@ -68,7 +66,7 @@ padding: 0 15px;
 margin: 0 auto;
 }
 /* header */
-header >.container{
+header{
     border-bottom: 1px solid var(--color-for-footer-text);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -110,7 +108,7 @@ color: var(--color-for-btn-text-hover);
 .box-main{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 .main-nav{
     display: flex;
@@ -123,6 +121,7 @@ color: var(--color-for-btn-text-hover);
 }
 .my-info{
     display: flex;
+    margin-left: auto;
 }
 .text{
     padding-top: 24px;
@@ -141,15 +140,11 @@ color: var(--color-for-btn-text-hover);
     
     background-color: var(--color-for-bc);
     padding-top: 188px;
-    padding-bottom: 290px;
-}
-.container-hero{
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding-bottom: 188px;
     text-align: center;
-
 }
+
+
 .head-hero{
     margin: 0 auto;
     text-transform: capitalize;
@@ -181,9 +176,12 @@ color: var(--color-for-btn-text-hover);
     background-color: var(--color-for-btn-hov-foc-hero);
 }
 /* section about company */
+.section{
+    padding-top: 120px;
+    
+}
 .about-conpany{
     display: flex;
-    margin-top: 120px;
     margin-left: calc(-1 * var(--card-between-gab));
 }
 .about{
@@ -205,12 +203,12 @@ color: var(--color-for-btn-text-hover);
 }
 /* What are we doing */
 .head-doing{
-    margin-top: 120px;
-
+    text-align: center;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
+    letter-spacing: 0.02em;
     color: var(--color-for-hedear);
 }
 /* flex сітка довільна */
@@ -219,7 +217,7 @@ color: var(--color-for-btn-text-hover);
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--card-between-gab));
-    margin-top: 75px;
+    margin-top: 72px;
 
 }
 .what-doing > .foto{
@@ -230,10 +228,11 @@ color: var(--color-for-btn-text-hover);
 .bc-team{
     background-color:var(--color-for-btn-secondary) ;
     margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
 }
 .team{
-padding-top: 120px;   
-
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -245,48 +244,38 @@ color:var(--color-for-hedear);
 .about-team{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 72px;
-    padding-bottom: 120px;
     margin-left: calc(-1 * var(--card-between-gab));
+    margin-top: 72px;
     
-
-
 }
 .about-team > .card{
     flex-basis: calc( 100% / 4 - var(--card-between-gab));
     margin-left:var(--card-between-gab);
-    margin-top: var(--card-between-gab);
     background:var(--color-for-body);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 }
-.img-border{
-    margin-bottom: 32px;
+.group-elements{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .name{
-    margin-bottom: 8px;
-
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color:var(--color-for-hedear);
 }
-.second-name{
-    padding-bottom: 32px;
 
-}
 /* footer */
 .footer{
    background-color: var(--color-for-bc);
    padding-top: 100px;
+   padding-bottom: 100px ;
 }
-.container-footer{
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+
     
-}
+
 .logo-footer{
     color: var(--color-for-footer-head);
     font-family: var(--logo-font);
@@ -301,7 +290,6 @@ color:var(--color-for-hedear);
     color: var(--color-for-btn-text-hover);
 }
 .text-footer{
-padding-bottom: 100px ;
 max-width: 264px;
 margin-top: 16px;
 font-size: 16px;
@@ -326,7 +314,6 @@ color:var(--color-for-footer-text);
 /* menu btn */
 .nav-btn{
     display: flex;
-    margin-top: 96px;   
     justify-content: center;
 }
 .btn+.btn{
@@ -357,28 +344,30 @@ color:var(--color-for-footer-text);
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1*var(--card-between-gab));
+    margin-bottom: calc( -1 * var(--card-between-gab-bottom));
 }
 .portfolio{
     flex-basis: calc( 100% / 3 - var(--card-between-gab));
     margin-left: var(--card-between-gab);
-    margin-top: var(--card-between-gab);
+    margin-bottom: var(--card-between-gab-bottom);
     background: var(--color-for-body);
     border: 1px solid var(--color-for-footer-text);
     text-transform: capitalize;
 }
-.portfolio >h3{
+.card-text{
+    padding-top:32px ;
+    padding-bottom: 32px;
+    padding-left:16px ;
+}
+.card-text >h3{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color:var(--color-for-bc);
-    margin-left: 16px;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
-.portfolio >p{
-    margin-bottom: 32px;
-    margin-left: 16px;
-}
+
 .footer-marging{
-    margin-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
