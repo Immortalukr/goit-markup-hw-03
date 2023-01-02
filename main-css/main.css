@@ -178,7 +178,10 @@ color: var(--color-for-btn-text-hover);
 /* section about company */
 .section{
     padding-top: 120px;
-    
+    padding-bottom: 120px;
+}
+.section-mrt{
+    padding-top: 0;
 }
 .about-conpany{
     display: flex;
@@ -227,7 +230,6 @@ color: var(--color-for-btn-text-hover);
 /* section team */
 .bc-team{
     background-color:var(--color-for-btn-secondary) ;
-    margin-top: 120px;
     padding-top: 120px;
     padding-bottom: 120px;
     text-align: center;
@@ -260,6 +262,7 @@ border-radius: 0px 0px 4px 4px;
     padding-bottom: 32px;
 }
 .name{
+    margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -347,13 +350,14 @@ color:var(--color-for-footer-text);
     margin-bottom: calc( -1 * var(--card-between-gab-bottom));
 }
 .portfolio{
-    flex-basis: calc( 100% / 3 - var(--card-between-gab));
+    width: calc( 100% / 3 - var(--card-between-gab));
     margin-left: var(--card-between-gab);
     margin-bottom: var(--card-between-gab-bottom);
     text-transform: capitalize;
 }
 .card-text{
-    border-top: none;
+    border: 1px solid #E7E9FC;
+    border-top: 0;
     padding-top:32px ;
     padding-bottom: 32px;
     padding-left:16px ;
